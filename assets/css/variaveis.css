@@ -1,0 +1,56 @@
+:root {
+  /* ========== 1. FONTES ========== */
+  --font-title: "Syne", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+
+  /* ========== 2. CORES PRINCIPAIS & GRADIENTES ========== */
+  --primary-color: #1198dd;
+  --secondary-color: #8b5cf6;
+  --purple3: #c084fc;
+  --green: #10b981;
+  --gradiente: linear-gradient(135deg, #1198dd, #8b5cf6);
+  --bg-degrade: linear-gradient(135deg, #050816, #0a0f27);
+
+  /* ========== 3. BACKGROUNDS & TEXTOS ========== */
+  --bg-primary: #050816;
+  --bg-secondary: #0a0f27;
+  --title-color: #f8fafc;
+  --text-color: #acb8c9;
+  --highlight-color: rgb(207, 215, 226);
+
+  /* ========== 4. EFEITOS & GLOWS ========== */
+  --glow-azul: rgba(59, 130, 246, 0.15);
+  --glow-roxo: rgba(168, 85, 247, 0.15);
+
+  /* ========== 5. BORDAS E LINHAS ========== */
+  --border: rgba(168, 85, 247, 0.15);
+  --border2: rgba(59, 130, 246, 0.25);
+  --border-azul: rgba(56, 191, 248, 0.45);
+  --border-roxo1: rgba(168, 85, 247, 0.1);
+  --border-roxo2: rgba(168, 85, 247, 0.45);
+
+  /* ========== 6. CARDS & BORDAS DE CARDS ========== */
+  /* Card 01 */
+  --card-1-light: #111b3f;
+  --card-1-dark: #0a0f27;
+  --card-1-bg: linear-gradient(135deg, var(--card-1-light), var(--card-1-dark));
+  --border-card1: linear-gradient(135deg, rgba(56, 191, 248, 0.35), #111b3f);
+  --border-card1-hover: linear-gradient(135deg, #38bff8, #111b3f);
+
+  /* Card 02 */
+  --card-2-light: #0a122d;
+  --card-2-dark: #050816;
+  --card-2-bg: linear-gradient(135deg, var(--card-2-light), var(--card-2-dark));
+  --border-card2: linear-gradient(135deg, rgba(56, 191, 248, 0.25), #0a122d);
+  --border-card2-hover: linear-gradient(135deg, #38bff8, #0a122d);
+  --border-card3-hover: linear-gradient(135deg, #38bff8, #0e2b38);
+
+  /* Card 03 */
+  --card-3-bg: linear-gradient(135deg, var(--card-2-light), var(--card-2-dark), var(--card-2-light));
+  --border-card3: linear-gradient(135deg, rgba(56, 191, 248, 0.35), #0a122d);
+
+  /* ========== 7. TAGS & OUTROS ========== */
+  --tags1: rgba(56, 191, 248, 0.05);
+  --tags2: rgba(138, 92, 246, 0.1);
+  --barra-light: rgba(122, 132, 153, 0.15);
+}

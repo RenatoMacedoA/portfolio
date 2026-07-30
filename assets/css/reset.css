@@ -1,0 +1,67 @@
+/* ========== RESET & REGRAS BASE ==========*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-color);
+  overflow-x: hidden;
+  transition:
+    background 0.4s,
+    color 0.4s;
+}
+
+body.no-overflow {
+  overflow: hidden;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* ========== CONTAINER GLOBAL & BACKGROUNDS DE SEÇÃO ========== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.hero,
+.header__nav,
+.projeto,
+.skill,
+.sobre,
+.contato {
+  background-color: var(--bg-primary);
+}
+
+
+.footer__Section {
+  background-color: var(--bg-secondary);
+}
+
+/* ========== SCROLLBAR PERSONALIZADA ========== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--primary-color), var(--secondary-color));
+  border-radius: 10px;
+}

@@ -1,0 +1,208 @@
+/* ========== 1. CURSOR PERSONALIZADO ========== */
+.cursor {
+  position: fixed;
+  z-index: 9998;
+  width: 12px;
+  height: 12px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  transition:
+    transform 0.1s,
+    width 0.3s,
+    height 0.3s,
+    background 0.3s;
+}
+
+.cursor-ring {
+  position: fixed;
+  z-index: 9997;
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid rgba(17, 153, 221, 0.35);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition:
+    transform 0.15s ease,
+    width 0.3s,
+    height 0.3s,
+    opacity 0.3s;
+}
+
+/* ========== 2. BOTÕES REUTILIZÁVEIS ========== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 30px;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 300;
+  transition: 0.3s ease;
+}
+
+.btn--primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: #fff;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 35px rgba(56, 191, 248, 0.4);
+}
+
+.btn--outline {
+  border: 1px solid var(--border2);
+  color: var(--primary-color);
+  backdrop-filter: blur(10px);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.btn--outline:hover {
+  background: var(--glow-azul);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+/* ========== 3. TÍTULOS DE SEÇÃO ========== */
+.section__titulos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__titulos--left,
+.section__titulos--right {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.section-tag {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-bottom: 1rem;
+  font-family: "Syne", sans-serif;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 800;
+  color: var(--title-color);
+  letter-spacing: -1px;
+}
+
+.section-line {
+  width: 150px;
+  height: 2.5px;
+  background: var(--gradiente);
+  border-radius: 50px;
+}
+
+.section__paragrafos {
+  max-width: 580px;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+
+.section__paragrafos strong {
+  font-weight: 700;
+  color: var(--highlight-color);
+}
+
+
+/* ========== 4. ELEMENTOS VISUAIS E DECORATIVOS ========== */
+.bg__textura {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 100%;
+  /* background: url("../image/bg-circuit.png") repeat right center;
+  background-size: 320px 320px; */
+  opacity: 0.20;
+  pointer-events: none;
+
+    /* Gradiente escuro (overlay) + Imagem de fundo */
+  background-image: linear-gradient(rgba(5, 8, 22, 0.322), rgba(5, 8, 22, 0.322)), url('../image/fundo51.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  z-index: 555;
+  transform: translateX(-50%);
+}
+
+.scroll-down span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin: -5px;
+  border-right: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  transform: rotate(45deg);
+  animation: scroll 2s infinite;
+  filter: drop-shadow(0 0 3px var(--primary-color));
+}
+
+.scroll-down span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.scroll-down span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.menu__social ul {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu__icon {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.menu__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--border-roxo2);
+  border-radius: 10px;
+  color: var(--text-color);
+  transition: 0.2s ease;
+}
+
+.menu__link:hover {
+  background: var(--glow-roxo);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  transform: translateY(-8px) scale(1.08);
+}

@@ -1,0 +1,229 @@
+/* ========== MEDIA QUERIES (DESKTOP E TELA CHEIA) ========== */
+@media screen and (min-width: 1920px) {
+  .hero__description {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    padding-block: 6rem;
+  }
+}
+
+
+
+
+/* ========== MEDIA QUERIES (TABLETS E DISPOSITIVOS MÓVEIS) ========== */
+@media (max-width: 900px) {
+
+.skill,
+.projeto,
+.sobre,
+.contato {
+
+  padding: 4.5rem 4%;
+ 
+}
+
+
+  .menu__Desktop {
+    display: none;
+  }
+  .header__nav {
+    background: transparent;
+    border: none;
+  }
+  header.rolagem {
+    background: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
+  }
+/* Esconde a logo e outros elementos dentro do header no mobile */
+  .header__logo,
+  .menu__Desktop {
+    display: none;
+  }
+
+  /* Deixa o container alinhado para o botão ficar correto */
+  .header__conteudo {
+    justify-content: flex-end;
+  }
+
+  /* Mantém apenas o botão visível */
+  header .btn-menu__mobile {
+    display: block;
+  }
+
+  /* ==================== HERO ==================== */
+
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    text-align: center;
+  }
+
+  /* Imagem primeiro */
+  .hero__images {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero__mobile {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    /* margin-top: 60px; */
+  }
+
+  .hero__background,
+  .hero__photo {
+    display: none;
+  }
+
+  /* Texto depois */
+  .hero__content {
+    order: 2;
+    width: 100%;
+    padding: 0;
+  }
+
+  .hero__text {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .hero__badge {
+    margin-inline: auto;
+  }
+
+  .hero__description {
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .hero__actions,
+  .hero__socials {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .scroll-down {
+    display: none;
+  }
+
+
+
+
+
+
+
+  /* 1. Remove o efeito sticky para os painéis empilharem naturalmente / Removes sticky position so panels stack naturally */
+  .skills-panel {
+    position: relative;
+    top: 0;
+    grid-template-columns: 1fr; /* Muda de 2 colunas para 1 / Changes from 2 columns to 1 */
+    gap: 24px;
+    padding: 24px 20px;
+    min-height: auto;
+  }
+
+  /* 2. Ajusta o grid interno dos cards de tecnologia para 1 coluna / Sets inner skills grid to 1 column */
+  .skills__grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* 3. Ajusta o tamanho dos números decorativos / Adjusts size of background numbers */
+  .skills-panel__number {
+    font-size: 2.5rem;
+  }
+
+  /* 4. Melhora a distribuição das tags do painel 03 no celular / Improves tags layout in panel 03 */
+  .skills__tags-container {
+    justify-content: center;
+  }
+
+  /* 1. Define 2 cards por fileira no mobile */
+  .skills__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  /* 2. Empilha os elementos do card na vertical (Ícone em cima, Texto no meio, Barra embaixo) */
+  .skills__card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0.75rem;
+    gap: 0.6rem;
+  }
+
+  /* 3. Ajusta a área de detalhes para ocupar toda a largura e centralizar */
+  .skills__details {
+    width: 100%;
+    align-items: center;
+  }
+
+  /* 4. Centraliza o nome da skill */
+  .skills__meta {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* 5. Garante que a barra de progresso fique visível e centralizada */
+  .skills__level {
+    display: block;
+    width: 100%;
+    margin-top: 0.25rem;
+  }
+
+
+
+
+  
+/*========== 5. SOBRE SECTION ==========*/
+
+
+.sobre__conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rem;
+  position: relative;
+  /* padding: 0 4%; */
+}
+
+
+.sobre__info {
+display: flex;
+align-items: center;
+flex-direction: column;
+gap: 4rem;
+}
+
+.sobre__image {
+   order: 1;
+   width: 250px;
+}
+
+
+.sobre__texto {
+   order: 2;
+}
+
+}
+

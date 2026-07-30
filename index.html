@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Renato Macedo | Portfólio Front-End Developer & Web Designer</title>
+
+    <meta
+      name="description"
+      content="Portfólio de Renato Macedo Afonso, desenvolvedor Front-End e Web Designer especializado em criar sites modernos, responsivos e focados na experiência do usuário."
+    />
+
+    <!-- Compartilhamento -->
+    <meta property="og:title" content="Renato Macedo Afonso | Front-End Developer" />
+    <meta property="og:description" content="Portfólio profissional com projetos de desenvolvimento web e design." />
+    <meta property="og:image" content="assets/img/preview.jpg" />
+    <meta property="og:type" content="website" />
+
+    <!-- Fontes -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Syne:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/variaveis.css" />
+    <link rel="stylesheet" href="assets/css/componentes.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/animacoes.css" />
+    <link rel="stylesheet" href="assets/css/responsivo.css" media="screen" />
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <link rel="icon" href="assets/img/favicon.ico" />
+  </head>
+
+  <body>
+    <!-- CURSOR PERSONALIZADO — visível apenas em desktop; oculto automaticamente em touch -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <!--==================== HEADER ====================-->
+    <header class="header__nav">
+      <div class="container">
+        <div class="header__conteudo">
+          <div class="header__logo">
+            <a href="#inicio"><img src="assets/image/logoRM.svg" alt="" /></a>
+          </div>
+          <nav class="menu__Desktop">
+            <ul class="menu">
+              <li><a href="#inicio" class="active js-link">Início</a></li>
+              <li><a href="#skill" class="js-link">Habilidades</a></li>
+              <li><a href="#projeto" class="js-link">Projetos</a></li>
+
+              <li><a href="#sobre" class="js-link">Sobre</a></li>
+              <li><a href="#contato" class="js-link">Contatos</a></li>
+            </ul>
+          </nav>
+
+          <!-- <div id="btn__abrir-menu" class="btn__abrir-menu">
+            <i class="bi bi-list"></i>
+          </div> -->
+
+          <div id="btn-menu__mobile" class="btn-menu__mobile">
+            <div class="line-menumobile-1"></div>
+            <div class="line-menumobile-2"></div>
+          </div>
+
+          <nav id="menu__mobile" class="menu__mobile">
+            <ul class="menu">
+              <li><a href="#inicio" class="active js-link">Início</a></li>
+              <li><a href="#skill" class="js-link">Habilidades</a></li>
+              <li><a href="#projeto" class="js-link">Projetos</a></li>
+
+              <li><a href="#sobre" class="js-link">Sobre</a></li>
+              <li><a href="#contato" class="js-link">Contatos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main>
+      <!--==================== HOME SECTION ====================-->
+      <section class="hero" id="inicio">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <div class="hero__text">
+              <div class="hero__badge"><span class="hero__badge-pulse"></span> Disponível para oportunidades</div>
+              <h1 class="hero__title">Renato<br />Macedo</h1>
+              <h2 id="typeWriter" class="hero__subtitle"></h2>
+              <p class="hero__description">
+                Especializado em criar interfaces modernas e intuitivas, combinando design, usabilidade e performance para experiências
+                digitais de qualidade.
+              </p>
+
+              <div class="hero__actions">
+                <a href="#projeto" class="btn btn--primary"><i class="fas fa-code"></i> Ver Projetos</a>
+
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1Sx9H4rnm-EZOzwN9v4sdnHXpkzO45IIn"
+                  class="btn btn--outline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Baixar Currículo em PDF"
+                >
+                  <i class="fas fa-download"></i> Download CV
+                </a>
+              </div>
+
+              <div class="hero__socials">
+                <a href="https://github.com/RenatoMacedoA" target="_blank" rel="noopener" class="hero__social-icon" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/renatomacedoa/"
+                  target="_blank"
+                  rel="noopener"
+                  class="hero__social-icon"
+                  title="LinkedIn"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://www.behance.net/RenatoMacedoA" target="_blank" rel="noopener" class="hero__social-icon" title="LinkedIn">
+                  <i class="fa-brands fa-square-behance"></i>
+                </a>
+
+                <!-- <a
+                  href="https://wa.me/5531984313201?text=Olá,%20Renato!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar."
+                  target="_blank"
+                  rel="noopener"
+                  class="hero__social-icon"
+                  title="WhatsApp"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                </a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__images">
+            <img src="assets/image/hero22.png" alt="" class="hero__background" />
+
+            <img src="assets/image/FotoHero5.png" alt="Foto de Renato Macedo" class="hero__photo hidden-right" />
+
+            <!-- Mobile -->
+            <img src="assets/image/mobile.webp" alt="Foto de Renato Macedo" class="hero__mobile" />
+          </div>
+          <div class="scroll-down">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="bg__textura"></div>
+      </section>
+
+      <section class="marquee">
+        <div class="marquee__track">
+          <div class="marquee__content">
+            <span>Web Design</span>
+            <span>UI/UX Design</span>
+            <span>Landing Pages</span>
+            <span>Soluções Digitais</span>
+            <span>Experiência do Usuário</span>
+            <span>Sites Modernos</span>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS SECTION ====================-->
+      <section id="skill" class="skill">
+        <div class="container">
+          <div class="skill__conteudo">
+            <div class="section__titulos section__titulos--left">
+              <span class="section-tag">Minhas Ferramentas</span>
+              <h2 class="section-title">Stack Tecnológica</h2>
+              <div class="section-line"></div>
+              <p class="section__paragrafos">
+                Ferramentas que utilizo diariamente para otimizar meu fluxo de trabalho e aumentar a produtividade.
+              </p>
+            </div>
+
+            <div class="skills-stack">
+              <!-- PANEL 01: DEV -->
+              <article class="skills-panel">
+                <div class="skills-panel__left hidden-left">
+                  <div class="skills-panel__number">01</div>
+                  <h3>DEV</h3>
+                  <p>Desenvolvimento front-end moderno, código limpo e interfaces responsivas.</p>
+                </div>
+                <div>
+                  <div class="skills__grid hidden-right">
+                    <!-- HTML5 -->
+                    <div class="skills__card">
+                      <div class="skills__icon-box">
+                        <img
+                          class="skills__icon"
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                          alt="HTML5"
+                        />
+                      </div>
+                      <div class="skills__details">
+                        <div class="skills__meta">
+                          <span class="skills__name">HTML5</span>
+                          <span class="skills__percentage">95%</span>
+                        </div>
+                        <div class="skills__level">
+                          <div class="skills__fill" data-level="95" style="width: 0%"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- CSS3 -->
+                    <div class="skills__card">
+                      <div class="skills__icon-box">
+                        <img
+                          class="skills__icon"
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                          alt="CSS3"
+                        />
+                      </div>
+                      <div class="skills__details">
+                        <div class="skills__meta">
+                          <span class="skills__name">CSS3</span>
+                          <span class="skills__percentage">90%</span>
+                        </div>
+                        <div class="skills__level">
+                          <div class="skills__fill" data-level="90" style="width: 0%"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="skills__card">
+                      <div class="skills__icon-box">
+                        <img
+                          class="skills__icon"
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                          alt="JavaScript"
+                        />
+                      </div>
+                      <div class="skills__details">
+                        <div class="skills__meta">
+                          <span class="skills__name">JavaScript</span>
+                          <span class="skills__percentage">75%</span>
+                        </div>
+                        <div class="skills__level">
+                          <div class="skills__fill" data-level="75" style="width: 0%"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Bootstrap -->
+                    <div class="skills__card">
+                      <div class="skills__icon-box">
+                        <img
+                          class="skills__icon"
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                          alt="Bootstrap"
+                        />
+                      </div>
+                      <div class="skills__details">
+                        <div class="skills__meta">
+                          <span class="skills__name">Bootstrap</span>
+                          <span class="skills__percentage">80%</span>
+                        </div>
+                        <div class="skills__level">
+                          <div class="skills__fill" data-level="80" style="width: 0%"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Sass -->
+                    <div class="skills__card">
+                      <div class="skills__icon-box">
+                        <img
+                          class="skills__icon"
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                          alt="Sass"
+                        />
+                      </div>
+                      <div class="skills__details">
+                        <div class="skills__meta">
+                          <span class="skills__name">Sass</span>
+                          <span class="skills__percentage">40%</span>
+                        </div>
+                        <div class="skills__level">
+                          <div class="skills__fill" data-level="40" style="width: 0%"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- React -->
+                    <div class="skills__card">
+                      <div class="skills__icon-box">
+                        <img
+                          class="skills__icon"
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                          alt="React"
+                        />
+                      </div>
+                      <div class="skills__details">
+                        <div class="skills__meta">
+                          <span class="skills__name">React</span>
+                          <span class="skills__percentage">30%</span>
+                        </div>
+                        <div class="skills__level">
+                          <div class="skills__fill" data-level="30" style="width: 0%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- PANEL 02: DESIGN -->
+              <article class="skills-panel">
+                <div class="skills-panel__left hidden-left">
+                  <div class="skills-panel__number">02</div>
+                  <h3>WEB DESIGN</h3>
+                  <p>Criação de protótipos de alta fidelidade, UI/UX e identidade visual.</p>
+                </div>
+                <div>
+                  <div class="skills__grid hidden-right">
+                    <!-- Figma -->
+                    <div class="skills__card">
+                      <div class="skills__icon-box">
+                        <img
+                          class="skills__icon"
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                          alt="Figma"
+                        />
+                      </div>
+                      <div class="skills__details">
+                        <div class="skills__meta">
+                          <span class="skills__name">Figma</span>
+                          <span class="skills__percentage">85%</span>
+                        </div>
+                        <div class="skills__level">
+                          <div class="skills__fill" data-level="85" style="width: 0%"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Illustrator -->
+                    <div class="skills__card">
+                      <div class="skills__icon-box">
+                        <img
+                          class="skills__icon"
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-original.svg"
+                          alt="Illustrator"
+                        />
+                      </div>
+                      <div class="skills__details">
+                        <div class="skills__meta">
+                          <span class="skills__name">Illustrator</span>
+                          <span class="skills__percentage">90%</span>
+                        </div>
+                        <div class="skills__level">
+                          <div class="skills__fill" data-level="90" style="width: 0%"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Photoshop -->
+                    <div class="skills__card">
+                      <div class="skills__icon-box">
+                        <img
+                          class="skills__icon"
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg"
+                          alt="Photoshop"
+                        />
+                      </div>
+                      <div class="skills__details">
+                        <div class="skills__meta">
+                          <span class="skills__name">Photoshop</span>
+                          <span class="skills__percentage">75%</span>
+                        </div>
+                        <div class="skills__level">
+                          <div class="skills__fill" data-level="75" style="width: 0%"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- UI/UX -->
+                    <div class="skills__card">
+                      <div class="skills__icon-box">
+                        <img class="skills__icon" src="https://img.icons8.com/color/96/design.png" alt="UI/UX" />
+                      </div>
+                      <div class="skills__details">
+                        <div class="skills__meta">
+                          <span class="skills__name">UI/UX</span>
+                          <span class="skills__percentage">78%</span>
+                        </div>
+                        <div class="skills__level">
+                          <div class="skills__fill" data-level="78" style="width: 0%"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Affinity -->
+                    <div class="skills__card">
+                      <div class="skills__icon-box">
+                        <img
+                          class="skills__icon"
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Affinity_%28App%29_Logo.svg/960px-Affinity_%28App%29_Logo.svg.png"
+                          alt="Affinity"
+                        />
+                      </div>
+                      <div class="skills__details">
+                        <div class="skills__meta">
+                          <span class="skills__name">Affinity</span>
+                          <span class="skills__percentage">55%</span>
+                        </div>
+                        <div class="skills__level">
+                          <div class="skills__fill" data-level="55" style="width: 0%"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Canva -->
+                    <div class="skills__card">
+                      <div class="skills__icon-box">
+                        <img
+                          class="skills__icon"
+                          src="https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000"
+                          alt="Canva"
+                        />
+                      </div>
+                      <div class="skills__details">
+                        <div class="skills__meta">
+                          <span class="skills__name">Canva</span>
+                          <span class="skills__percentage">90%</span>
+                        </div>
+                        <div class="skills__level">
+                          <div class="skills__fill" data-level="90" style="width: 0%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- PANEL 03: FERRAMENTAS -->
+              <article class="skills-panel">
+                <div class="skills-panel__left hidden-left">
+                  <div class="skills-panel__number">03</div>
+                  <h3>FERRAMENTAS</h3>
+                  <p>Ferramentas de produtividade e ecossistema de trabalho diário.</p>
+                </div>
+                <div>
+                  <div class="skills__tags-container hidden-right">
+                    <div class="skills__tag">
+                      <img
+                        class="skills__tag-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                        alt="Git"
+                      />
+                      <span class="skills__tag-name">Git</span>
+                    </div>
+
+                    <div class="skills__tag">
+                      <i class="bi bi-github skills__tag-icon icon__github"></i>
+                      <span class="skills__tag-name">GitHub</span>
+                    </div>
+
+                    <div class="skills__tag">
+                      <img
+                        class="skills__tag-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                        alt="VS Code"
+                      />
+                      <span class="skills__tag-name">VS Code</span>
+                    </div>
+
+                    <div class="skills__tag">
+                      <img
+                        class="skills__tag-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg"
+                        alt="Chrome DevTools"
+                      />
+                      <span class="skills__tag-name">Chrome DevTools</span>
+                    </div>
+
+                    <div class="skills__tag">
+                      <img
+                        class="skills__tag-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg"
+                        alt="Vercel"
+                      />
+                      <span class="skills__tag-name">Vercel</span>
+                    </div>
+
+                    <div class="skills__tag">
+                      <img
+                        class="skills__tag-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+                        alt="Postman"
+                      />
+                      <span class="skills__tag-name">Postman</span>
+                    </div>
+
+                    <div class="skills__tag">
+                      <img
+                        class="skills__tag-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                        alt="Linux"
+                      />
+                      <span class="skills__tag-name">Linux</span>
+                    </div>
+
+                    <div class="skills__tag">
+                      <img
+                        class="skills__tag-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        alt="Node.js"
+                      />
+                      <span class="skills__tag-name">Node.js</span>
+                    </div>
+
+                    <div class="skills__tag">
+                      <img
+                        class="skills__tag-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
+                        alt="npm"
+                      />
+                      <span class="skills__tag-name">npm</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PROJETOS SECTION ====================-->
+      <section id="projeto" class="projeto">
+        <div class="container">
+          <div class="projeto__conteudo">
+            <div class="section__titulos">
+              <span class="section-tag">Portfólio</span>
+              <h2 class="section-title">Ultimos Projetos</h2>
+              <div class="section-line"></div>
+              <div class="section__paragrafos">Alguns trabalhos que unem criatividade, tecnologia e experiência do usuário.</div>
+            </div>
+
+            <div class="projeto__grid">
+              <div class="projeto__card pop">
+                <div class="projeto__imagem-container">
+                  <img class="projeto__imagem" src="assets/image/LP-IronPulse.jpg" alt="Landing Page para Iron Pulse" />
+
+                  <div class="projeto__overlay">
+                    <a href="https://ironpulseclub.vercel.app/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+                      <span>Ver Projeto</span>
+                      <i class="bi bi-arrow-down-right"></i>
+                    </a>
+
+                    <a
+                      href="https://github.com/RenatoMacedoA/LP-IronPulse"
+                      class="btn btn--outline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span>GitHub</span>
+                      <i class="bi bi-download"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="projeto__info">
+                  <div class="projeto__nome">Iron Pulse</div>
+                  <div class="projeto__desc">
+                    Landing page para academia com design moderno, responsivo e foco na captação de novos alunos.
+                  </div>
+                  <div class="projeto__tags">
+                    <span class="projeto__tag">HTML</span>
+                    <span class="projeto__tag">CSS</span>
+                    <span class="projeto__tag">JavaScript</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="projeto__card pop">
+                <div class="projeto__imagem-container">
+                  <img class="projeto__imagem" src="assets/image/Stranger-Things.png" alt="Stranger Things" />
+
+                  <div class="projeto__overlay">
+                    <a
+                      href="https://renatomacedoa.github.io/Strange-Things/"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span>Ver Projeto</span>
+                      <i class="bi bi-arrow-down-right"></i>
+                    </a>
+
+                    <a
+                      href="https://github.com/RenatoMacedoA/Strange-Things"
+                      class="btn btn--outline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span>GitHub</span>
+                      <i class="bi bi-download"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="projeto__info">
+                  <div class="projeto__nome">Strange-Things</div>
+                  <div class="projeto__desc">Landing Page inspirada no Stranger-Things, com design moderno e experiência imersiva.</div>
+                  <div class="projeto__tags">
+                    <span class="projeto__tag">HTML</span>
+                    <span class="projeto__tag">CSS</span>
+                    <span class="projeto__tag">JavaScript</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="projeto__card pop">
+                <div class="projeto__imagem-container">
+                  <img class="projeto__imagem" src="assets/image/Spider-Man.png" alt="Spider Man" />
+                  <div class="projeto__overlay">
+                    <a
+                      href="https://renatomacedoa.github.io/SpiderMan-LandingPage/"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span>Ver Projeto</span>
+                      <i class="bi bi-arrow-down-right"></i>
+                    </a>
+
+                    <a
+                      href="https://github.com/RenatoMacedoA/SpiderMan-LandingPage"
+                      class="btn btn--outline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span>GitHub</span>
+                      <i class="bi bi-download"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="projeto__info">
+                  <div class="projeto__nome">Spider Man</div>
+                  <div class="projeto__desc">Landing Page inspirada no Spider-Man, com design moderno e experiência imersiva.</div>
+                  <div class="projeto__tags">
+                    <span class="projeto__tag">HTML</span>
+                    <span class="projeto__tag">CSS</span>
+                    <span class="projeto__tag">JavaScript</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="projeto__card pop">
+                <div class="projeto__imagem-container">
+                  <img class="projeto__imagem" src="assets/image/Pokedex.png" alt="Spider Man" />
+
+                  <div class="projeto__overlay">
+                    <a href="https://renatomacedoa.github.io/Pokedex/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+                      <span>Ver Projeto</span>
+                      <i class="bi bi-arrow-down-right"></i>
+                    </a>
+
+                    <a href="https://github.com/RenatoMacedoA/Pokedex" class="btn btn--outline" target="_blank" rel="noopener noreferrer">
+                      <span>GitHub</span>
+                      <i class="bi bi-download"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="projeto__info">
+                  <div class="projeto__nome">Pokedex</div>
+                  <div class="projeto__desc">Aplicação web de Pokémon com API, CSS Grid/Flexbox e manipulação de DOM.</div>
+                  <div class="projeto__tags">
+                    <span class="projeto__tag">HTML</span>
+                    <span class="projeto__tag">CSS</span>
+                    <span class="projeto__tag">JavaScript</span>
+                    <span class="projeto__tag">Fetch API</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="projeto__card pop">
+                <div class="projeto__imagem-container">
+                  <img class="projeto__imagem" src="Spider-Man.png" alt="Jogo Da Memória" />
+
+                  <div class="projeto__overlay">
+                    <a
+                      href="https://renatomacedoa.github.io/Memory-Game/"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span>Ver Projeto</span>
+                      <i class="bi bi-arrow-down-right"></i>
+                    </a>
+
+                    <a
+                      href="https://github.com/RenatoMacedoA/Memory-Game"
+                      class="btn btn--outline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span>GitHub</span>
+                      <i class="bi bi-download"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="projeto__info">
+                  <div class="projeto__nome">Jogo Da Memória</div>
+                  <div class="projeto__desc">Projeto desenvolvido para praticar JavaScript, manipulação do DOM e lógica de programação.</div>
+                  <div class="projeto__tags">
+                    <span class="projeto__tag">HTML</span>
+                    <span class="projeto__tag">CSS</span>
+                    <span class="projeto__tag">JavaScript</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="projeto__card pop">
+                <div class="projeto__imagem-container">
+                  <img class="projeto__imagem" src="Spider-Man.png" alt="Spider Man" />
+
+                  <div class="projeto__overlay">
+                    <a
+                      href="https://renatomacedoa.github.io/SpiderMan-LandingPage/"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span>Ver Projeto</span>
+                      <i class="bi bi-arrow-down-right"></i>
+                    </a>
+
+                    <a
+                      href="https://github.com/RenatoMacedoA/SpiderMan-LandingPage"
+                      class="btn btn--outline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span>GitHub</span>
+                      <i class="bi bi-download"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="projeto__info">
+                  <div class="projeto__nome">Spider Man</div>
+                  <div class="projeto__desc">Landing Page inspirada no Spider-Man, com design moderno e experiência imersiva.</div>
+                  <div class="projeto__tags">
+                    <span class="projeto__tag">HTML</span>
+                    <span class="projeto__tag">CSS</span>
+                    <span class="projeto__tag">JavaScript</span>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+
+            <div class="projeto__botoes">
+              <a href="https://github.com/RenatoMacedoA" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+                <span>Ver todos no GitHub</span>
+                <i class="bi bi-arrow-down-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section id="certificado" class="certificados">
+        <h1>certificado</h1>
+      </section> -->
+
+      <!--==================== SOBRE SECTION ====================-->
+      <section id="sobre" class="sobre">
+      
+
+        <div class="container">
+          <div class="sobre__conteudo">
+            <!-- Conteúdo -->
+            <div class="sobre__info">
+              <!-- Imagem -->
+              <figure class="sobre__image hidden-left">
+                <img src="assets/image/FotoSobre2.webp" alt="Foto de Renato Macedo" loading="lazy" />
+              </figure>
+
+              <!-- Texto -->
+              <div class="sobre__texto hidden-right">
+                <!-- Título da Seção -->
+                <div class="section__titulos section__titulos--left">
+                  <span class="section-tag">SOBRE MIM</span>
+                  <h2 class="section-title">Código & Design</h2>
+                  <div class="section-line"></div>
+                </div>
+
+                <div class="sobre__paragrafo">
+                  <p>
+                    Sou
+                    <strong>desenvolvedor front-end, web designer e designer</strong>, apaixonado por criar experiências digitais modernas e
+                    bem pensadas. Gosto de transformar ideias em interfaces que unem estética, funcionalidade e uma boa experiência para o
+                    usuário.
+                  </p>
+
+                  <p>
+                    Tenho experiência com
+                    <strong>HTML, CSS e JavaScript</strong>, além de atuar com design de interfaces e identidade visual. Sempre busco
+                    evoluir minhas habilidades e aplicar boas práticas tanto no código quanto no design.
+                  </p>
+
+                  <p>
+                    Atualmente, meu foco é continuar crescendo como profissional da área, desenvolvendo projetos que me desafiem e permitam
+                    melhorar constantemente.
+                  </p>
+                </div>
+
+                <!-- NÃO ALTERAR -->
+                <div class="hero__actions">
+                  <a href="#contato" class="btn btn--primary">
+                    <i class="bi bi-whatsapp"></i>
+                    Contatos
+                  </a>
+
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1Sx9H4rnm-EZOzwN9v4sdnHXpkzO45IIn"
+                    class="btn btn--outline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Baixar Currículo em PDF"
+                  >
+                    <i class="fas fa-download"></i>
+                    Download CV
+                  </a>
+                </div>
+                <!-- /NÃO ALTERAR -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTATOS SECTION ====================-->
+      <section id="contato" class="contato">
+        <div class="container">
+          <!-- Bloco de Texto Superior Centralizado -->
+          <div class="contatos__topo pop">
+            <div class="section__titulos">
+              <span class="section-tag">Vamos Conversar</span>
+              <h2 class="section-title">Entre em Contato</h2>
+              <div class="section-line"></div>
+              <div class="section__paragrafos">
+                <p>
+                  Estou aberto a novas oportunidades, projetos freelance e colaborações.
+                  <br />
+                  <strong>Entre em contato e vamos criar algo incrível juntos.</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-grid pop">
+            <!-- Github -->
+            <a class="contact-card github" href="https://github.com/RenatoMacedoA" target="_blank" rel="noopener noreferrer">
+              <div class="contact-icon">
+                <i class="fab fa-github"></i>
+              </div>
+
+              <h3 class="contact-label">GitHub</h3>
+
+              <p class="contact-val">github.com/RenatoMacedoA</p>
+            </a>
+
+            <!-- Linkedin -->
+            <a class="contact-card linkedin" href="https://www.linkedin.com/in/renatomacedoa/" target="_blank" rel="noopener noreferrer">
+              <div class="contact-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+
+              <h3 class="contact-label">LinkedIn</h3>
+
+              <p class="contact-val">linkedin.com/in/renatomacedoa</p>
+            </a>
+
+            <!-- Email -->
+            <a class="contact-card email" href="mailto:renatomacedonato@gmail.com">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+
+              <h3 class="contact-label">E-mail</h3>
+
+              <p class="contact-val">renatomacedonato@gmail.com</p>
+            </a>
+
+            <!-- Whatsapp -->
+            <a
+              class="contact-card whatsapp"
+              href="https://wa.me/5531984313201?text=Olá,%20Renato!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="contact-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+
+              <h3 class="contact-label">WhatsApp</h3>
+
+              <p class="contact-val">(31) 9 8431-3201</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer__Section">
+      <div class="container">
+        <div class="footer__conteudo">
+          <div class="footer--logo">Renato Macedo</div>
+
+          <!-- MENU FOOTER -->
+          <div class="footer__menu">
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#skill">Habilidades</a></li>
+              <li><a href="#projeto">Projetos</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#contato">Contatos</a></li>
+            </ul>
+          </div>
+
+          <p class="copyright">©2026 Renato Macedo , Designer & Developer</p>
+        </div>
+      </div>
+    </footer>
+
+    <!--==================== JAVA SCRIPT ====================-->
+    <script src="assets/js/menu.js" defer></script>
+    <script src="assets/js/animacoes.js" defer></script>
+  </body>
+</html>
