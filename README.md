@@ -60,8 +60,8 @@ portfolio/
 
 ## 🌐 Acesse o Projeto
 
-* **Site:** *(adicione o link do seu portfólio)*
-* **Repositório:** *(adicione o link do GitHub)*
+* **Site:** *https://renatomacedo-portfolio.vercel.app/*
+* **Repositório:** *https://github.com/RenatoMacedoA/portfolio*
 
 ---
 
