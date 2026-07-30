@@ -30,19 +30,16 @@ Meu portfólio como **Desenvolvedor Front-end**, desenvolvido para apresentar me
 
 ### Desktop
 
-> Adicione a imagem da versão desktop.
+<p align="center">
+  <img src="./assets/image/preview.jpg" alt="Versão Desktop" width="900">
+</p>
 
-```text
-assets/image/preview.jpg
-```
 
 ### Mobile
 
-> Adicione a imagem da versão mobile.
-
-```text
-assets/image/mobile2.webp
-```
+<p align="center">
+  <img src="./assets/image/mobile2.webp" alt="Versão Mobile" width="300">
+</p>
 
 ---
 
